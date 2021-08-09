@@ -14,8 +14,11 @@
         <module>gulimall-ware</module>
         <module>gulimall-product</module>
         <module>gulimall-order</module>
-        <module>gulimall-menber</module>
+        <module>gulimall-member</module>
         <module>gulimall-coupon</module>
+        <module>renren-fast</module><!-- 后台管理 -->
+        <module>renren-generator</module>
+        <module>gulimall-common</module>
     </modules>
 
 
