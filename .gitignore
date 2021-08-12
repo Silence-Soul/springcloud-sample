@@ -15,6 +15,3 @@ buildNumber.properties
 
 **/.mvn
 .idea
-
-/renren-fast
-/renren-generator

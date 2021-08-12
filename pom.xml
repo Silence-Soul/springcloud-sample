@@ -19,6 +19,7 @@
         <module>renren-fast</module><!-- 后台管理 -->
         <module>renren-generator</module>
         <module>gulimall-common</module>
+        <module>gulimall-gateway</module>
     </modules>
 
 
