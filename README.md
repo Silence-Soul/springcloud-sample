@@ -98,17 +98,18 @@
 ```
 
 # VUE HTTP POST GET 模板
+## http post
 ```bazaar
-http post
-
 this.$http({
   url: this.$http.adornUrl(''),
   method: 'post',
   data: this.$http.adornData(ids, false)
 }).then(({data}) => { })
 
-http get
 
+```
+## http get
+```bazaar
 this.$http({
   url: this.$http.adornUrl(''),
   method: 'get',
