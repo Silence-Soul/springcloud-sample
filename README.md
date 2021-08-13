@@ -45,7 +45,7 @@
 		"body": [
 			"<!-- $1 -->",
 			"<template>",
-			"<div class='$2'>$5</div>",
+			"<div></div>",
 			"</template>",
 			"",
 			"<script>",
@@ -55,6 +55,7 @@
 			"export default {",
 			"//import引入的组件需要注入到对象中才能使用",
 			"components: {},",
+			"props: {},",
 			"data() {",
 			"//这里存放数据",
 			"return {",
@@ -87,11 +88,30 @@
 			"}",
 			"</script>",
 			"<style scoped>",
-			"//@import url($3); 引入公共css类",
+			"",
 			"$4",
 			"</style>"
 		],
 		"description": "生成vue模板"
 	}
 }
+```
+
+# VUE HTTP POST GET 模板
+```bazaar
+http post
+
+this.$http({
+  url: this.$http.adornUrl(''),
+  method: 'post',
+  data: this.$http.adornData(ids, false)
+}).then(({data}) => { })
+
+http get
+
+this.$http({
+  url: this.$http.adornUrl(''),
+  method: 'get',
+  params: this.$http.adornParams({ })
+}).then(({data}) => { })
 ```
