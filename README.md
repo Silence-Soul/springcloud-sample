@@ -105,8 +105,6 @@ this.$http({
   method: 'post',
   data: this.$http.adornData(ids, false)
 }).then(({data}) => { })
-
-
 ```
 ## http get
 ```bazaar

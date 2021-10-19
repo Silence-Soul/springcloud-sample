@@ -1,7 +1,7 @@
 package com.atguili.gulimall.product.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguili.common.utils.PageUtils;
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguili.gulimall.product.entity.CategoryEntity;
 
 import java.util.List;
@@ -21,5 +21,9 @@ public interface CategoryService extends IService<CategoryEntity> {
     List<CategoryEntity> listWithTree();
 
     void removeMenusByIds(List<Long> ids);
+
+    Long[] findCatelogPath(Long catelogId);
+
+    void updateCascade(CategoryEntity category);
 }
 
